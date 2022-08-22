@@ -12,8 +12,6 @@
 
 * NOT: Düşük bir sunucunuz varsa farklı sunucuya kurun.
 
-* NOT: Ben gaia kurmak ıstemıyorum var olan nodelara kurmak istiyorsanız SEİ-STRIDE hermes floodu dün yazmıştım [buradan](https://github.com/ruesandora/stride-testnet/blob/main/stride-sei-hermes.md) bulabilirsiniz.
-
 * EN ÖNEMLİ NOT: Ekip GAIA istiyor.
 
 ## Validator adımızı düzenleyelim:
@@ -184,12 +182,12 @@ gaiad keys add $WALLET --recover
 ```
 gaiad tx staking create-validator \
   --amount 1000000uatom \
-  --from Rues \
+  --from  machvi \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
   --commission-rate "0.07" \
   --min-self-delegation "1" \
   --pubkey  $(gaiad tendermint show-validator) \
-  --moniker RuesValidator \
+  --moniker machvi \
   --chain-id GAIA
 ```
